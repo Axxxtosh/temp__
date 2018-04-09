@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="colorText">#212121</color>
+
+    <color name="colorAccent">#607D8B</color>
+
+
+
+    <!--pallet-->
+    <color name="colorWhite">#3F51B5</color>
+    <color name="colorBlack">#303F9F</color>
+    <color name="colorDarkGrey">#FF4081</color>
+    <color name="colorLightGrey">#FF4081</color>
+    <color name="colorAmber">#FFC107</color>
+    <color name="colorYellowDarker">#FF4081</color>
+    <color name="colorOrange">#FF4081</color>
+    <color name="colorOrangeDarker">#FF4081</color>
+    <color name="colorMagenta">#FF4081</color>
+    <color name="colorMagentaDarker">#FF4081</color>
+
+
+
+
+
+</resources>
