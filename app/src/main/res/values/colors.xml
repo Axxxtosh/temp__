@@ -20,6 +20,9 @@
     <color name="colorMagenta">#FF4081</color>
     <color name="colorMagentaDarker">#FF4081</color>
 
+    <drawable name="button_focused">#3F51B5</drawable>
+    <drawable name="button_pressed">#FF4081</drawable>
+
 
 
 
