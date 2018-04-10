@@ -69,12 +69,8 @@ dependencies {
     //Timber
     implementation 'com.jakewharton.timber:timber:4.7.0'
 
-
-
     //Progress
     compile 'com.eyalbira.loadingdots:loading-dots:1.0.2'
-
-
 
 
 }

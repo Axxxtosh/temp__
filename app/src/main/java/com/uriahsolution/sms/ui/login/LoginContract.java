@@ -1,6 +1,5 @@
 package com.uriahsolution.sms.ui.login;
 
-import com.uriahsolution.sms.BasePresenter;
 import com.uriahsolution.sms.BaseView;
 
 public class LoginContract {
@@ -11,11 +10,10 @@ public class LoginContract {
 
         }
 
-        interface Presenter extends BasePresenter<View> {
+        interface Presenter {
 
 
-            void takeView(LoginContract.View view);
-            void dropView();
+
         }
 
 

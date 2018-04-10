@@ -1,6 +1,6 @@
 package com.uriahsolution.sms.ui.login;
 
-import android.graphics.Color;
+
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,11 +14,13 @@ import com.uriahsolution.sms.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements LoginContract.View {
 
     @BindView(R.id.btn_login)
     Button btn_login;
 
+
+    private LoginPresenter mLoginPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +28,11 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         ButterKnife.bind(this);
-        final Handler handler = new Handler();
 
 
+
+        //Set presenter
+        mLoginPresenter=new LoginPresenter(this);
 
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,6 +41,26 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
+
+    }
+
+    @Override
+    public void showProgress() {
+
+    }
+
+    @Override
+    public void setPresenter(LoginContract.Presenter presenter) {
+
+    }
+
+    @Override
+    public void hideProgress() {
+
+    }
+
+    @Override
+    public void log() {
 
     }
 }
