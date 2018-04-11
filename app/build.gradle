@@ -4,7 +4,7 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.uriahsolution.sms"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -71,6 +71,9 @@ dependencies {
 
     //Progress
     compile 'com.eyalbira.loadingdots:loading-dots:1.0.2'
+
+    //calender
+    compile 'com.github.npanigrahy:Custom-Calendar-View:v1.0'
 
 
 }

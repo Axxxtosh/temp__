@@ -9,16 +9,12 @@
 
 
     <!--pallet-->
-    <color name="colorWhite">#3F51B5</color>
-    <color name="colorBlack">#303F9F</color>
-    <color name="colorDarkGrey">#FF4081</color>
-    <color name="colorLightGrey">#FF4081</color>
+    <color name="colorWhite">#fafafa</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorDarkGrey">#292929</color>
+    <color name="colorLightGrey">#8e8e8e</color>
     <color name="colorAmber">#FFC107</color>
-    <color name="colorYellowDarker">#FF4081</color>
-    <color name="colorOrange">#FF4081</color>
-    <color name="colorOrangeDarker">#FF4081</color>
-    <color name="colorMagenta">#FF4081</color>
-    <color name="colorMagentaDarker">#FF4081</color>
+
 
     <drawable name="button_focused">#3F51B5</drawable>
     <drawable name="button_pressed">#FF4081</drawable>

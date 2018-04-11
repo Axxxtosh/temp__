@@ -7,128 +7,322 @@
     android:layout_height="match_parent"
     tools:context=".ui.main.MainActivity">
 
-    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/profile_image"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:src="#d4d4d4" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/student_name"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:fontFamily="@font/cabin_sketch" />
+
+        <TextView
+            android:id="@+id/tv_hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Hi, Good Morning"
+            android:textSize="10sp"
+
+            app:fontFamily="@font/cabin_semibold_italic" />
+    </LinearLayout>
+
+    <!--first row-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:src="#d4d4d4"
-        app:civ_border_color="#707070"
-        app:civ_border_width="1dp"
-
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.037" />
+        app:layout_constraintVertical_bias="0.387">
 
-    <TextView
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/student" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin_medium"
+                android:text="My Profile" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/calendar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin_medium"
+                android:text="Attendance" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/homework" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin_medium"
+                android:text="Homework" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--second row-->
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:minLines="2"
-        android:text="@string/student_name"
-        android:textAlignment="center"
-        app:fontFamily="@font/cabin_sketch"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_image"
-        app:layout_constraintVertical_bias="0.01" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.04">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
 
+            <ImageView
 
-    <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/result" />
 
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/bell"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="452dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin_medium"
+                android:text="Result" />
 
-    <ImageView
+        </LinearLayout>
 
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/blackboard"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="452dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <ImageView
+            <ImageView
 
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/book"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="354dp" />
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/lib" />
 
-    <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/bell"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="354dp" />
+                android:text="Library" />
 
-    <ImageView
+        </LinearLayout>
 
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/boss"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="354dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <ImageView
+            <ImageView
 
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/library"
-        tools:layout_editor_absoluteX="167dp"
-        tools:layout_editor_absoluteY="236dp" />
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/homework_" />
 
-    <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hostel" />
 
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/schoolmaterial"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="452dp" />
+        </LinearLayout>
 
-    <ImageView
-
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/earthglobe"
-        tools:layout_editor_absoluteX="276dp"
-        tools:layout_editor_absoluteY="236dp" />
-
-    <ImageView
-
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/exam"
-        tools:layout_editor_absoluteX="59dp"
-        tools:layout_editor_absoluteY="236dp" />
-
-
-
-
-    <android.support.constraint.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    </LinearLayout>
+    <!--third row-->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="200dp" />
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/circular" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Circular" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/remarks" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remarks" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/timetable_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:clickable="true"
+            android:background="@drawable/ripple_ll"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:focusable="true">
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:srcCompat="@drawable/lib" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timetable" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@drawable/back_footer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </android.support.constraint.ConstraintLayout>
