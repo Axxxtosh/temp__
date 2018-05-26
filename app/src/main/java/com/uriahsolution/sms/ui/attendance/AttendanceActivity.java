@@ -1,0 +1,17 @@
+package com.uriahsolution.sms.ui.attendance;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.uriahsolution.sms.R;
+
+public class AttendanceActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_attendance);
+
+
+    }
+}

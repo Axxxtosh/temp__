@@ -2,15 +2,13 @@ package com.uriahsolution.sms.ui.login;
 
 
 import android.content.Intent;
-import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
 import com.uriahsolution.sms.R;
 import com.uriahsolution.sms.ui.main.MainActivity;
-
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
