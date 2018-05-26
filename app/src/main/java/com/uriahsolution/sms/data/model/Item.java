@@ -12,6 +12,10 @@ import com.google.gson.annotations.SerializedName;
 public class Item {
 
 
+    public void setId(int id) {
+        this.id = id;
+    }
+
     @PrimaryKey
     private int id;
 
